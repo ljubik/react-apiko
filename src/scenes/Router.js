@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './Home/Home';
-import NotFound from './NotFound/NotFound';
+// import Home from './Home/Home';
+// import NotFound from './NotFound/NotFound';
 
 export const routes = {
   home: `/`,
@@ -9,12 +9,12 @@ export const routes = {
   register: `/auth/register`,
 };
 
-// function Home() {
-//   return <div className="Home">Home</div>;
-// }
-// function NotFound() {
-//   return <div className="NotFound">404 Not Found</div>;
-// }
+function Home() {
+  return <div className="Home">Home</div>;
+}
+function NotFound() {
+  return <div className="NotFound">404 Not Found</div>;
+}
 
 export default function Router() {
   return (
