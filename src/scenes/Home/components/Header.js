@@ -1,17 +1,16 @@
 import React from 'react';
 // import T from 'prop-types';
-import s from './Home.module.scss';
+// import s from './Home.module.scss';
 // import { Header } from '../../components/';
 
-function Home() {
+function Header() {
   return (
-    <div className={s.container}>
-      {/* <Header /> */}
-      Home from component
+    <div>
+      Header component
     </div>
   );
 }
 
 // Home.propType = [];
 
-export default Home;
+export default Header;
