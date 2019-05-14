@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
 // import T from 'prop-types';
-import s from './Login.module.scss';
+import s from "./Login.module.scss";
+import { routes } from "../Router";
+import { Link } from "react-router-dom";
 // import { Header } from '../../components/';
 
 function Login() {
@@ -8,10 +10,11 @@ function Login() {
     <div className={s.container}>
       {/* <Header /> */}
       Login from component
+      <Link to={routes.register}>register</Link>
     </div>
   );
 }
 
-// Home.propType = [];
+// Login.propType = [];
 
 export default Login;

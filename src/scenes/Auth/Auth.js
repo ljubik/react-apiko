@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 import { routes } from "../Router";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import NotFound from "../NotFound/NotFound";
 
 function Auth() {
   return (
@@ -15,6 +16,7 @@ function Auth() {
       <Switch>
         <Route path={routes.login} component={Login} />
         <Route path={routes.register} component={Register} />
+        <Route component={NotFound} />
       </Switch>
     </div>
   );
