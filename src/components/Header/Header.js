@@ -1,19 +1,19 @@
-import React from 'react';
-import T from 'prop-types';
-import s from './Header.module.scss';
-import { routes } from '../../scenes/Router';
-import { Link } from 'react-router-dom';
+import React from "react";
+import T from "prop-types";
+import s from "./Header.module.scss";
+import { routes } from "../../scenes/Router";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Header className={s.header}>
+    <div className={s.header}>
       <div className={s.left}>
-        <link to={routes.home}>Marketplace</link>
+        <Link to={routes.home}>Marketplace</Link>
       </div>
       <div className={s.right}>
-        <link to={routes.login}>Login</link>
+        <Link to={routes.login}>Login</Link>
       </div>
-    </Header>
+    </div>
   );
 }
 
