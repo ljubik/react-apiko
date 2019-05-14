@@ -5,12 +5,14 @@ import Home from "./Home/Home";
 // import Login from "./Login/Login";
 import NotFound from "./NotFound/NotFound";
 import Auth from "./Auth/Auth";
+import Inbox from "./Inbox/Inbox";
 
 export const routes = {
   home: `/`,
   login: `/auth/login`,
   register: `/auth/register`,
-  auth: `/auth`
+  auth: `/auth`,
+  inbox: `/inbox`
 };
 
 // function Home() {
@@ -25,9 +27,8 @@ export default function Router() {
     <BrowserRouter>
       <Switch>
         <Route exact path={routes.home} component={Home} />
-        {/* exect для тогого щоб  спрацьовував тільки слеш а не /1 */}
-        {/* <Route path={routes.login} component={Login} />
-        <Route path={routes.register} component={Register} /> */}
+        {/* exect для тогого щоб  спрацьовував тільки сiлеш а не /1 */}
+        <Route exact path={routes.inbox} component={Inbox} />
         <Auth />
         <Route component={NotFound} />
         {/* буде спрацьовувати завжди */}
