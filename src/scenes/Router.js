@@ -9,7 +9,8 @@ import Auth from "./Auth/Auth";
 export const routes = {
   home: `/`,
   login: `/auth/login`,
-  register: `/auth/register`
+  register: `/auth/register`,
+  auth: `/auth`
 };
 
 // function Home() {

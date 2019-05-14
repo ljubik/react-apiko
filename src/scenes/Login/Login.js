@@ -17,4 +17,6 @@ function Login() {
 
 // Login.propType = [];
 
-export default Login;
+const enhancer = compose(withHandlers({}));
+
+export default enhancer(Login);
