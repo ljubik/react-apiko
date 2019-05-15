@@ -1,3 +1,3 @@
-import * as Api from "./Api";
+import * as Api from './Api'
 
-export default Api;
+export default Api

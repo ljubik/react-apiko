@@ -1,10 +1,10 @@
-import React from "react";
-import T from "prop-types";
-import s from "./Header.module.scss";
-import { routes } from "../../scenes/Router";
-import { Link, withRouter } from "react-router-dom";
-import { compose, withHandlers } from "recompose";
-import Api from "../../api/Index";
+import React from 'react'
+import T from 'prop-types'
+import s from './Header.module.scss'
+import { routes } from '../../scenes/Router'
+import { Link, withRouter } from 'react-router-dom'
+import { compose, withHandlers } from 'recompose'
+import Api from '../../api/Index'
 
 function Header({ HandleLogout }) {
   return (
@@ -22,19 +22,19 @@ function Header({ HandleLogout }) {
         )}
       </div>
     </div>
-  );
+  )
 }
 
-Header.propType = [];
+Header.propType = []
 
 const enhancer = compose(
   withRouter,
   withHandlers({
     HandleLogout: props => () => {
-      Api.Auth.logout();
-      props.history.push(routes.home);
-    }
+      Api.Auth.logout()
+      props.history.push(routes.home)
+    },
   })
-);
+)
 
-export default enhancer(Header);
+export default enhancer(Header)

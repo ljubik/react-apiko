@@ -1,19 +1,19 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./Home/Home";
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './Home/Home'
 // import Register from "./Register/Register";
 // import Login from "./Login/Login";
-import NotFound from "./NotFound/NotFound";
-import Auth from "./Auth/Auth";
-import Inbox from "./Inbox/Inbox";
+import NotFound from './NotFound/NotFound'
+import Auth from './Auth/Auth'
+import Inbox from './Inbox/Inbox'
 
 export const routes = {
   home: `/`,
   login: `/auth/login`,
   register: `/auth/register`,
   auth: `/auth`,
-  inbox: `/inbox`
-};
+  inbox: `/inbox`,
+}
 
 // function Home() {
 //   return <div className="Home">Home</div>;
@@ -34,5 +34,5 @@ export default function Router() {
         {/* буде спрацьовувати завжди */}
       </Switch>
     </BrowserRouter>
-  );
+  )
 }

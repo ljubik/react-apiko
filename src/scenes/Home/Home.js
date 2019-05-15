@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 // import T from 'prop-types';
-import s from "./Home.module.scss";
-import { Header } from "../../components";
+import s from './Home.module.scss'
+import { Header } from '../../components'
 
 function Home() {
   return (
@@ -9,9 +9,9 @@ function Home() {
       <Header />
       Home from component
     </div>
-  );
+  )
 }
 
 // Home.propType = [];
 
-export default Home;
+export default Home
